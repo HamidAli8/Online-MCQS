@@ -4,24 +4,124 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MCQ Quiz App</title>
-   <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div id="background-container"></div>
   <div class="quiz-container">
     <h1>MCQ Quiz</h1>
 
+  
+    <div id="question-container">
+     
+    </div>
+
+    
     <div class="navigation-buttons">
       <button id="prev-btn" disabled>Previous</button>
       <button id="next-btn">Next</button>
     </div>
 
-    <div class="submit">
+   
+    <button id="submit-btn" style="display: none;">Submit Quiz</button>
 
-    <button id="submit-btn">Submit Quiz</button>
-    </div>
- 
-    <div id="result"></div>
+
+    <div id="result" ></div>
   </div>
+
+ 
+  <div id="questions" style="display: none;">
+    <!-- Question 1 -->
+    <div class="question" data-keyword="Paris" data-correct="A">
+      <p>1. What is the capital of France?</p>
+      <label><input type="radio" name="q1" value="A"> A) Paris</label>
+      <label><input type="radio" name="q1" value="B"> B) London</label>
+      <label><input type="radio" name="q1" value="C"> C) Berlin</label>
+      <label><input type="radio" name="q1" value="D"> D) Madrid</label>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question" data-keyword="Mars" data-correct="B">
+      <p>2. Which planet is known as the Red Planet?</p>
+      <label><input type="radio" name="q2" value="A"> A) Earth</label>
+      <label><input type="radio" name="q2" value="B"> B) Mars</label>
+      <label><input type="radio" name="q2" value="C"> C) Jupiter</label>
+      <label><input type="radio" name="q2" value="D"> D) Saturn</label>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question" data-keyword="Nile River" data-correct="B">
+      <p>3. Which is the longest river in the world?</p>
+      <label><input type="radio" name="q3" value="A"> A) Amazon</label>
+      <label><input type="radio" name="q3" value="B"> B) Nile</label>
+      <label><input type="radio" name="q3" value="C"> C) Yangtze</label>
+      <label><input type="radio" name="q3" value="D"> D) Mississippi</label>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question" data-keyword="Water" data-correct="A">
+      <p>4. What is the chemical symbol for water?</p>
+      <label><input type="radio" name="q4" value="A"> A) H2O</label>
+      <label><input type="radio" name="q4" value="B"> B) CO2</label>
+      <label><input type="radio" name="q4" value="C"> C) O2</label>
+      <label><input type="radio" name="q4" value="D"> D) NaCl</label>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question" data-keyword="George Washington" data-correct="B">
+      <p>5. Who was the first President of the United States?</p>
+      <label><input type="radio" name="q5" value="A"> A) Thomas Jefferson</label>
+      <label><input type="radio" name="q5" value="B"> B) George Washington</label>
+      <label><input type="radio" name="q5" value="C"> C) Abraham Lincoln</label>
+      <label><input type="radio" name="q5" value="D"> D) John Adams</label>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="question" data-keyword="FIFA World Cup 2022" data-correct="C">
+      <p>6. Which country won the FIFA World Cup in 2022?</p>
+      <label><input type="radio" name="q6" value="A"> A) Brazil</label>
+      <label><input type="radio" name="q6" value="B"> B) France</label>
+      <label><input type="radio" name="q6" value="C"> C) Argentina</label>
+      <label><input type="radio" name="q6" value="D"> D) Germany</label>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="question" data-keyword="HTML Code" data-correct="A">
+      <p>7. What does "HTML" stand for?</p>
+      <label><input type="radio" name="q7" value="A"> A) HyperText Markup Language</label>
+      <label><input type="radio" name="q7" value="B"> B) High-Level Machine Language</label>
+      <label><input type="radio" name="q7" value="C"> C) Hyperlink and Text Management Language</label>
+      <label><input type="radio" name="q7" value="D"> D) Home Tool Markup Language</label>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="question" data-keyword="Romeo and Juliet" data-correct="B">
+      <p>8. Who wrote the play "Romeo and Juliet"?</p>
+      <label><input type="radio" name="q8" value="A"> A) Charles Dickens</label>
+      <label><input type="radio" name="q8" value="B"> B) William Shakespeare</label>
+      <label><input type="radio" name="q8" value="C"> C) Mark Twain</label>
+      <label><input type="radio" name="q8" value="D"> D) Jane Austen</label>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="question" data-keyword="Iron Man" data-correct="B">
+      <p>9. Which movie features the character "Tony Stark"?</p>
+      <label><input type="radio" name="q9" value="A"> A) Spider-Man</label>
+      <label><input type="radio" name="q9" value="B"> B) Iron Man</label>
+      <label><input type="radio" name="q9" value="C"> C) The Avengers</label>
+      <label><input type="radio" name="q9" value="D"> D) Captain America</label>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="question" data-keyword="Michael Jackson" data-correct="B">
+      <p>10. Who is known as the "King of Pop"?</p>
+      <label><input type="radio" name="q10" value="A"> A) Elvis Presley</label>
+      <label><input type="radio" name="q10" value="B"> B) Michael Jackson</label>
+      <label><input type="radio" name="q10" value="C"> C) Justin Bieber</label>
+      <label><input type="radio" name="q10" value="D"> D) Freddie Mercury</label>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-</html>     
+</html>
